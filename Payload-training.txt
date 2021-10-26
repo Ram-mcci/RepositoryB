@@ -1,0 +1,53 @@
+
+
+..............................................
+
+	payload - 1e 08 10 7c 7f ff b9 9a
+	
+	1e - message format
+	
+	08 - flag Byte
+	
+	10 7c ff b9
+	
+	
+	
+	1 0 0 0 
+	
+	80 - 
+	
+	CO2 - b9 9a
+	
+	
+...............................................
+
+	payload - 23 4a d5 06 db ff 20 00 34 cd 4e 66 2a 1e 00 63 54 99 99 00 c8 00 64 03 00 19 0a 7c 3d ff ff 7f ff fc 00 74 00 f4 cd
+	
+	message format - 23
+	
+	4a d5 06 db
+	
+	flagg byte - ff  1 1 1 1 1 1 1 1
+	
+	data bytes - 20 00 34 cd 4e 66 2a 1e 00 63 54 99 99 00 c8 00 64 03 00 19 0a 7c 3d ff ff 7f ff fc 00 74 00 f4 cd
+	
+	vbat - 20 00
+	
+	vbus - 34 cd
+	
+	boot - 4e
+	
+	TPH - 66 2a 1e 00 63 54
+	
+	Light - 99 99
+	
+	Pellets - 00 c8 00 64 03 00 
+	
+	Activity -  19 0a 7c 3d ff ff 7f ff fc 00 74 00 
+	
+	CO2 -  f4 cd 
+	
+..................................................
+	
+	
+	

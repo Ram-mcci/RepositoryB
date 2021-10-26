@@ -1,0 +1,54 @@
+
+
+enum class FlagsSensorPort3 : uint8_t
+        {
+        FlagVbat = 1 << 0,
+        FlagVcc = 1 << 1,
+        FlagBoot = 1 << 2,
+        FlagTH = 1 << 3,        // temperature, humidity
+        FlagLight = 1 << 4,     // Si1133 "ir", "white", "uv"
+        FlagVbus = 1 << 5,      // Vbus input
+        };
+        
+        
+        uint8_t  =>  it means, it is a 8-bit data
+        
+        so,binary would be  =>           1    1  1   1   1  1  1  1
+        so value for each bit =>        128  64  32  16  8  4  2  1 
+        
+        S.No. (bit number) =>            8    7   6   5  4  3  2  1
+        
+        
+        
+        FlagVbat = 1 << 0,      ===> left shift 1 by 0 time (1st bit)    ===> FlagVbat = 1;      (0x01)
+        FlagVcc = 1 << 1,       ===> left shift 1 by 1 time (2nd bit)    ===> FlagVcc = 2;       (0x02)
+        FlagBoot = 1 << 2,      ===> left shift 1 by 2 time (3rd bit)    ===> FlagBoot = 4;      (0x04)
+        FlagTH = 1 << 3,        ===> left shift 1 by 3 time (4th bit)    ===> FlagTH = 8;        (0x08)
+        FlagLight = 1 << 4,     ===> left shift 1 by 4 time (5th bit)    ===> FlagLight = 16;    (0x10)
+        FlagVbus = 1 << 5,      ===> left shift 1 by 5 time (6th bit)    ===> FlagVbus = 32;     (0x20)
+        
+        
+        000001
+        000100
+        001000
+        010000
+        100000
+        
+                   0 0 1   1       1   1   0   1
+                      3			D
+                      
+                      HEX ===> 0x3D
+                      
+                   
+                   flags & 0x20
+                   
+                   0 0 0 1    1 1 0 1
+                   0 0 1 0    0 0 0 0
+                   
+                   0 0 0 0    0 0 0 0
+                   
+                   
+                   
+                   
+                       
+                       
